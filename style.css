@@ -1,0 +1,32 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  border-bottom: 2px solid grey;
+}
+
+.nav-item a {
+  color: #09421a;
+}
+
+.nav-item a:hover {
+  color: #09421a;
+}
+
+.btn-masuk {
+  background-color: #09421a;
+  color: white;
+}
+
+.btn-masuk:hover {
+  background-color: #09421a;
+  color: white;
+}
+
+div .button-hero {
+  height: 60px;
+  width: 100%;
+  background-color: #f0e4ab;
+  border-radius: 20px;
+}
