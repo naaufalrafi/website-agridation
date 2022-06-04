@@ -1,0 +1,78 @@
+body {
+  background: url("https://iili.io/Xb1vcv.png") no-repeat center center fixed;
+  background-size: cover;
+  /* min-height: 100vh;
+  min-width: 100vw; */
+  font-family: 'Lato';
+}
+
+.kiri {
+  /* width: 50%; */
+  height: 550px;
+  background-color: #f7f2d4bf;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.kiri .textDesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kiri .textDesc h3 {
+  width: 400px;
+  margin: auto;
+  font-weight: bold;
+  text-align: center;
+}
+
+.kanan {
+  /* width: 50%; */
+  height: 550px;
+  background-color: #125d1b;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+}
+
+form>div>input {
+  width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  margin-top: 10px;
+  border: none;
+}
+
+form .forgot {
+  font-size: 12px;
+  text-align: end;
+  opacity: 0.5;
+}
+
+form .btn {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #adeea1;
+}
+
+form h6 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+form h6 span {
+  opacity: 0.5;
+}
+
+form h6 a {
+  color: white;
+  text-decoration: none;
+}
+
+form h6 a:hover {
+  color: white;
+  text-decoration: none;
+}
