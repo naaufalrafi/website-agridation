@@ -68,4 +68,9 @@ class login extends CI_Controller
             redirect('auth/login');
         }
     }
+    public function logout()
+    {
+        $this->session->sess_destroy();
+        redirect('home');
+    }
 }

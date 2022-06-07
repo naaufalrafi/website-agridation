@@ -13,6 +13,9 @@ class dashboard extends CI_Controller
 
     public function index()
     {
-        $this->load->view('user/dashboard');
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $this->load->view('user/templates/header',$data);
+        $this->load->view('user/dashboard',$data);
+        $this->load->view('user/templates/footer');
     }
 }

@@ -52,6 +52,7 @@ class regist extends CI_Controller
                 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
                 'code' => $code,
                 'verified' => 1,
+                'profile' => 'default.jpg',
                 'date_created' => time()
             ];
             $id = $this->m_user->insertid($data);
@@ -103,9 +104,5 @@ class regist extends CI_Controller
             redirect('auth/login');
         }
     }
-    public function logout()
-    {
-        $this->session->sess_destroy();
-        redirect('home');
-    }
+    
 }
