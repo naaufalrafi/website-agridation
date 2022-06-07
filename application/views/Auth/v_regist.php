@@ -32,47 +32,48 @@
                     <img src="<?=base_url('assets/img/')?>logorem.png" alt="" width="198px" class="pt-5"
                         style="display: block; margin: auto" />
                     <h4 class="fw-bold pt-5">Daftar</h4>
-                    <form action="/action_page.php">
+                    <form action="<?php echo base_url('auth/regist'); ?>" method="POST">
                         <div class="mb-3 mt-3">
                             <label for="nama">Nama Lengkap</label>
-                            <input type="text" id="nama" name="nama" placeholder="Masukan Nama Lengkap Anda">
-                        </div>
-                        <div class="mb-3 mt-3">
-                            <label for="nik">NIK</label>
-                            <input type="text" id="nik" name="nik" placeholder="Masukan NIK Anda">
+                            <input type="text" id="nama_lengkap" name="nama_lengkap" value="<?= set_value('nama_lengkap'); ?>" placeholder="Masukan Nama Lengkap Anda">
+                            <?= form_error('nama_lengkap', '<small class="text-danger">', '</small>') ?>
                         </div>
                         <div class="mb-3 mt-3">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Masukan Email Anda">
+                            <input type="email" id="email" name="email" value="<?= set_value('email'); ?>" placeholder="Masukan Email Anda">
+                            <?= form_error('email', '<small class="text-danger">', '</small>') ?>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <label for="nik">NIK</label>
+                                <label for="nik">Nomor Telepon</label>
                                 <br>
-                                <input type="text" class="nik" id="nik" name="nik" placeholder="Masukan NIK Anda">
+                                <input type="number" class="nik" id="phone" value="<?= set_value('phone'); ?>" name="phone" placeholder="Masukan No Telepon Anda">
+                                <?= form_error('phone', '<small class="text-danger">', '</small>') ?>
                             </div>
                             <div class="col">
-                                <label for="nik">NIK</label>
+                                <label for="nik">Jenis Kelamin</label>
                                 <br>
-                                <label for="laki" class="gender">
-                                    <input type="radio" id="laki" name="gender" value="Laki-Laki">
+                                <label for="gender" class="gender">
+                                    <input type="radio" id="gender" name="gender" value="Laki-laki" <?= set_radio('gender', 'Laki-laki'); ?>>
                                     Laki-Laki
                                 </label>
                                 <br>
-                                <label for="perempuan" class="gender">
-                                    <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                                <label for="gender" class="gender">
+                                    <input type="radio" id="gender" name="gender" value="Perempuan" <?= set_radio('gender', 'Perempuan'); ?>>
                                     Perempuan
                                 </label>
                                 <br>
+                                 <?= form_error('gender', '<small class="text-danger">', '</small>') ?>
                             </div>
                         </div>
                         <div class="mb-3 mt-3">
                             <label for="password">Kata Sandi</label>
-                            <input type="password" id="password" name="password" placeholder="Masukan Kata Sandi">
+                            <input type="password" id="password1" name="password1" placeholder="Masukan Kata Sandi">
+                            <?= form_error('password1', '<small class="text-danger">', '</small>') ?>
                         </div>
                         <div class="mb-3 mt-3">
                             <label for="password">Konfirmasi Kata Sandi</label>
-                            <input type="password" id="password" name="password"
+                            <input type="password" id="password2" name="password2"
                                 placeholder="Masukan Kembali Kata Sandi">
                         </div>
                         <a href="#">
@@ -80,7 +81,7 @@
                         </a>
                         <hr>
                         <h6 class="daftar mb-3 mt-3"><a href="lupaSandi.html">Lupa Kata Sandi?</a></h6>
-                        <h6 class="daftar mb-3 mt-3"><span>Sudah Memiliki Akun?</span><a href="<?= base_url('Auth/Login')?>">Masuk</a>
+                        <h6 class="daftar mb-3 mt-3"><span>Sudah Memiliki Akun?</span><a href="<?= base_url('auth/login')?>">Masuk</a>
                         </h6>
                     </form>
                 </div>

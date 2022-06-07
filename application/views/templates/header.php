@@ -41,7 +41,7 @@
               <a class="nav-link active">Artikel</a>
             </li>
           </ul>
-          <button class="btn btn-masuk me-2 ms-4 fw-bold" type="button">Masuk</button>
+          <a href="<?= base_url('auth/login')?>"><button class="btn btn-masuk me-2 ms-4 fw-bold" type="button">Masuk</button></a>
         </div>
       </div>
     </nav>
