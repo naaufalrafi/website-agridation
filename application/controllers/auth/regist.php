@@ -51,7 +51,7 @@ class regist extends CI_Controller
                 'gender' => $gender = htmlspecialchars($this->input->post('gender', true)),
                 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
                 'code' => $code,
-                'verified' => 1,
+                'verified' => false,
                 'profile' => 'default.jpg',
                 'date_created' => time()
             ];
@@ -61,12 +61,13 @@ class regist extends CI_Controller
             $config = array(
                 'protocol' => 'smtp',
                 'smtp_host'	=>	'ssl://smtp.googlemail.com',
-                'smtp_user'	=>	'muhammadfiqih953@gmail.com',
-			    'smtp_pass'	=>	'muhammadfiqih1602',
+                'smtp_user'	=>	'kelasku1602@gmail.com',
+			    'smtp_pass'	=>	'iwyngiyzzrpgydga',
                 'smtp_port'	=>	465,
                 'mailtype'	=>	'html',
                 'charset'	=>	'utf-8',
                 'newline'	=>	"\r\n",
+                'validation' => TRUE
                 
             );
             // $id_user = $this->m_user->getUser($id);
@@ -80,6 +81,7 @@ class regist extends CI_Controller
 							<p>Your Account:</p>
 							<p>Email: " . $email . "</p>
 							<p>Please click the link below to activate your account.</p>
+                            <h4><a href='" . base_url() . "auth/login/activate" . "/" . $id . "/" . $code . "'>Activate My Account</a></h4>
 						</body>
 						</html>
 						";
@@ -89,7 +91,7 @@ class regist extends CI_Controller
             $this->email->from($config['smtp_user']);
             $this->email->to($email);
             $this->email->subject('Signup Verification Email');
-            $this->email->message('halo');
+            $this->email->message($message);
 
             //sending email
             if ($this->email->send()) {

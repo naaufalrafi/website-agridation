@@ -6,6 +6,7 @@ class login extends CI_Controller
     {
         parent::__construct();
         $this->load->library('form_validation', 'session');
+        $this->load->model('auth/m_user');
         $this->load->helper('url', 'form');
     }
     public function index()
@@ -67,6 +68,31 @@ class login extends CI_Controller
             </div>');
             redirect('auth/login');
         }
+    }
+    public function activate()
+    {
+        $id =  $this->uri->segment(4);
+        $code = $this->uri->segment(5);
+
+        //fetch user details
+        $user = $this->m_user->getUser($id);
+
+        //if code matches
+        if ($user['code'] == $code) {
+            //update user active status
+            $data['verified'] = true;
+            $query = $this->m_user->activate($data, $id);
+
+            if ($query) {
+                $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">User activated successfully</div>');
+            } else {
+                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Something went wrong in activating account</div>');
+            }
+        } else {
+            $this->session->set_flashdata('message', 'Cannot activate account. Code didnt match');
+        }
+
+        redirect('auth/login');
     }
     public function logout()
     {
