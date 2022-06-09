@@ -45,32 +45,34 @@ nav .nav-item a {
   color: white;
 }
 
-.text-hero {
-  width: 500px;
-}
-
-div .button-hero {
-  /* height: 60px;
-  width: 650px; */
+.button-hero {
+  /* height: 60px; */
   background-color: #f0e4ab;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
-div .button-hero .btnHero {
+.btnHero {
   background-color: #032c17;
   color: white;
+  padding: 5px 10px;
   border-radius: 8px;
   font-size: 18px;
   margin-bottom: 12px;
   border: 1px solid #032c17;
 }
 
-div .button-hero .btnHero:hover {
+.btnHero:hover {
   background-color: #f0e4ab;
   color: #032c17;
   border-radius: 8px;
   font-size: 18px;
   border: 1px solid #032c17;
+}
+
+@media screen and (max-width: 768px) {
+  .main-col {
+    width: 100%;
+  }
 }
 
 /* info sectio styling */
