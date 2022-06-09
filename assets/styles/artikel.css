@@ -1,0 +1,47 @@
+/* Default Home Styling */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.btn {
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: 10px;
+  margin-left: 25px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/* main styling */
+.cardTrending {
+  background-color: #125d1b;
+  border-radius: 15px;
+  border: none;
+}
+
+.cardArtikel {
+  background-color: #125d1b;
+  border-radius: 15px;
+}
+
+.card-body > h6 {
+  color: #ced4da;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.card-body > h4 {
+  color: white;
+}
+
+.card-body > a {
+  color: #ced4da;
+  font-size: 14px;
+  opacity: 0.8;
+  text-decoration: none;
+}
