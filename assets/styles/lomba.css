@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
   position: relative;
   background-color: #f8f9fa;
   font-family: 'Lato';
@@ -58,6 +59,130 @@ nav {
 }
 
 .section-footer {
+=======
+    position: relative;
+    background-color: #F8F9FA;
+    font-family: 'Lato';
+}
+  
+nav {
+    border-bottom: 2px solid grey;
+}
+
+.nav-item a {
+    color: #09421a;
+  }
+  
+  .nav-item a:hover {
+    color: #09421a;
+  }
+  
+  .btn-masuk {
+    background-color: #09421a;
+    color: white;
+  }
+  
+  .btn-masuk:hover {
+    background-color: #09421a;
+    color: white;
+  }
+
+
+#lomba {
+    display: flex;
+    margin: 80px 0px 0px;
+    gap: 32px;
+    background: #F8F9FA;
+    color: #F8F9FA;
+}
+
+#lomba .container{
+    background-color: #F8F9FA;    
+}
+
+#lomba .card{
+    background-color: #125D1B;
+    border-radius: 16px;
+}
+
+#lomba .card img{
+    height: 93.33px;
+    width: 73.33px;
+    margin: 16px 134px 0 134px;
+}
+
+#lomba a{
+  margin-top: -1.00rem;
+}
+
+#timeline{
+  margin-top: -10rem;
+}
+
+.section-footer{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+body {
+    background-color: #F8F9FA;
+    font-family: 'Lato';
+}
+  
+nav {
+    border-bottom: 2px solid grey;
+}
+
+.nav-item a {
+    color: #09421a;
+  }
+  
+  .nav-item a:hover {
+    color: #09421a;
+  }
+  
+  .btn-masuk {
+    background-color: #09421a;
+    color: white;
+  }
+  
+  .btn-masuk:hover {
+    background-color: #09421a;
+    color: white;
+  }
+
+
+#lomba {
+    display: flex;
+    margin: 80px 0px 0px;
+    gap: 32px;
+    background: #F8F9FA;
+    color: #F8F9FA;
+}
+
+#lomba .container{
+    background-color: #F8F9FA;    
+}
+
+#lomba .card{
+    background-color: #125D1B;
+    border-radius: 16px;
+}
+
+#lomba .card img{
+    height: 93.33px;
+    width: 73.33px;
+    margin: 16px 134px 0 134px;
+}
+
+#lomba a{
+  margin-top: -1.00rem;
+}
+
+.section-footer{
+>>>>>>> 4355a9c152b68ad5a84aa2297bb6f36792540f55
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
@@ -65,6 +190,7 @@ nav {
   border-bottom: 2px solid grey;
 }
 
+<<<<<<< HEAD
 body {
   background-color: #f8f9fa;
   font-family: 'Lato';
@@ -132,16 +258,32 @@ nav {
 }
 
 #timeline .container {
+=======
+#timeline{
+  margin-top: -10rem;
+}
+
+#timeline .container{
+>>>>>>> 4355a9c152b68ad5a84aa2297bb6f36792540f55
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
+<<<<<<< HEAD
 
   width: 1412px;
   height: 910px;
 
   background: #f8f9fa;
 
+=======
+  
+  width: 1412px;
+  height: 910px;
+  
+  background: #F8F9FA;
+  
+>>>>>>> 4355a9c152b68ad5a84aa2297bb6f36792540f55
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -156,3 +298,28 @@ nav {
 .container img {
   max-width: 1034px;
 }
+<<<<<<< HEAD
+=======
+
+.fw-light{
+
+
+  height: 57px;
+
+
+  /* Paragraph/Reguler/2 */
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+
+  /* Natural/400 */
+
+  color: #CED4DA;
+
+}
+>>>>>>> 4355a9c152b68ad5a84aa2297bb6f36792540f55
