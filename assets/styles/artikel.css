@@ -1,0 +1,177 @@
+body {
+    position: relative;
+    background-color: #F8F9FA;
+    font-family: 'Lato';
+}
+  
+nav {
+    border-bottom: 2px solid grey;
+}
+
+.nav-item a {
+    color: #09421a;
+  }
+  
+  .nav-item a:hover {
+    color: #09421a;
+  }
+  
+  .btn-masuk {
+    background-color: #09421a;
+    color: white;
+  }
+  
+  .btn-masuk:hover {
+    background-color: #09421a;
+    color: white;
+  }
+
+
+#lomba {
+    display: flex;
+    margin: 80px 0px 0px;
+    gap: 32px;
+    background: #F8F9FA;
+    color: #F8F9FA;
+}
+
+#lomba .container{
+    background-color: #F8F9FA;    
+}
+
+#lomba .card{
+    background-color: #125D1B;
+    border-radius: 16px;
+}
+
+#lomba .card img{
+    height: 93.33px;
+    width: 73.33px;
+    margin: 16px 134px 0 134px;
+}
+
+#lomba a{
+  margin-top: -1.00rem;
+}
+
+#timeline{
+  margin-top: -10rem;
+}
+
+.section-footer{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  margin-top: 90px;
+}
+body {
+    background-color: #F8F9FA;
+    font-family: 'Lato';
+}
+  
+nav {
+    border-bottom: 2px solid grey;
+}
+
+.nav-item a {
+    color: #09421a;
+  }
+  
+  .nav-item a:hover {
+    color: #09421a;
+  }
+  
+  .btn-masuk {
+    background-color: #09421a;
+    color: white;
+  }
+  
+  .btn-masuk:hover {
+    background-color: #09421a;
+    color: white;
+  }
+
+
+.fw-light-header{
+    width: 602px;
+    height: 19px;
+
+    /* Subheader/2 */
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+
+    /* Natural/400 */
+
+    color: #CED4DA;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.fw-light{
+    height: 57px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    letter-spacing: 0.2px;
+
+    color: #CED4DA;
+
+}
+
+
+#artikel {
+    height: 512px;
+    margin-top: -320px;
+
+  }
+  
+  .cardArtikel {
+    background-color: #125d1b;
+    border-radius: 15px;
+  }
+  
+  .card-body > h6 {
+    color: #ced4da;
+    font-size: 12px;
+    opacity: 0.8;
+  }
+  
+  .card-body > h4 {
+    color: white;
+  }
+  
+  .card-body > a {
+    color: #ced4da;
+    font-size: 14px;
+    opacity: 0.8;
+    text-decoration: none;
+  }
+
+.section-footer{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+
+.container img {
+  max-width: 1034px;
+}
+
