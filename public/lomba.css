@@ -1,59 +1,45 @@
 body {
-    background-color: #F8F9FA;
-    font-family: 'Lato';
+  background-color: #f8f9fa;
+  font-family: 'Lato';
 }
-  
+
+.btn {
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  /* margin-top: 10px;
+  margin-left: 25px; */
+  /* transition-duration: 0.4s; */
+  cursor: pointer;
+}
+
 nav {
-    border-bottom: 2px solid grey;
+  border-bottom: 2px solid grey;
 }
 
 .nav-item a {
-    color: #09421a;
-  }
-  
-  .nav-item a:hover {
-    color: #09421a;
-  }
-  
-  .btn-masuk {
-    background-color: #09421a;
-    color: white;
-  }
-  
-  .btn-masuk:hover {
-    background-color: #09421a;
-    color: white;
-  }
-
-
-#lomba {
-    display: flex;
-    margin: 80px 0px 0px;
-    gap: 32px;
-    background: #F8F9FA;
-    color: #F8F9FA;
+  color: #09421a;
 }
 
-#lomba .container{
-    background-color: #F8F9FA;    
+.nav-item a:hover {
+  color: #09421a;
 }
 
-#lomba .card{
-    background-color: #125D1B;
-    border-radius: 16px;
+.btn-masuk {
+  background-color: #09421a;
+  color: white;
 }
 
-#lomba .card img{
-    height: 93.33px;
-    width: 73.33px;
-    margin: 16px 134px 0 134px;
+.btn-masuk:hover {
+  background-color: #09421a;
+  color: white;
 }
 
-#lomba a{
-  margin-top: -1.00rem;
-}
-
-.section-footer{
+.section-footer {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
@@ -61,35 +47,51 @@ nav {
   border-bottom: 2px solid grey;
 }
 
-#timeline{
-  margin-top: -10rem;
+/* lomba card styling */
+#lomba {
+  color: white;
 }
 
-#timeline .container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  
-  width: 1412px;
-  height: 910px;
-  
-  background: #F8F9FA;
-  
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+.card-lomba {
+  border: none;
+  border-radius: 13px;
+  background-color: #125d1b;
 }
 
-#timeline .container-img {
-  padding: 0px;
-  gap: 48px;
-  overflow-y: scroll;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.container img {
-  max-width: 1034px;
+ul li {
+  opacity: 0.7;
+  font-size: 12px;
 }
 
+/* timeline styling */
 
+.btn-lomba {
+  background-color: #032c17;
+  margin: 0;
+  border-radius: 8px;
+  padding-bottom: 7px;
+  color: white;
+  font-weight: 300;
+  text-align: left;
+  /* transition: 0.5s; */
+}
 
+.btn-lomba:hover {
+  background-color: #032c17;
+  margin: 0;
+  border-radius: 8px;
+  padding-bottom: 7px;
+  color: white;
+  /* transition: 0.5s; */
+}
+
+option {
+  background-color: #f7f2d4;
+  color: black;
+}
