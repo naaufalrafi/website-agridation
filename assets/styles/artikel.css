@@ -17,11 +17,51 @@ body {
   cursor: pointer;
 }
 
+/* Navbar styling */
+nav {
+  border-bottom: 2px solid grey;
+}
+
+nav .nav-item a {
+  color: #09421a;
+}
+
+.nav-item a:hover {
+  color: #09421a;
+}
+
+.btn-masuk {
+  background-color: #09421a;
+  color: white;
+}
+
+.btn-masuk:hover {
+  background-color: #09421a;
+  color: white;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  right: 100%;
+  margin-top: -1px;
+}
+
 /* main styling */
 .cardTrending {
   background-color: #125d1b;
   border-radius: 15px;
   border: none;
+  color: white;
+}
+
+.cardTrending .card-text a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.7;
 }
 
 .cardArtikel {

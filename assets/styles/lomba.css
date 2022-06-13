@@ -1,250 +1,107 @@
+/* Default Home Styling */
 body {
-<<<<<<< HEAD
+  font-family: 'Lato', sans-serif;
+}
+
+.btn {
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: 10px;
+  margin-left: 25px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/* Navbar styling */
+nav {
+  border-bottom: 2px solid grey;
+}
+
+nav .nav-item a {
+  color: #09421a;
+  font-size: 16px;
+}
+
+.nav-item a:hover {
+  color: #09421a;
+  font-size: 16px;
+}
+
+.btn-masuk {
+  background-color: #09421a;
+  color: white;
+}
+
+.btn-masuk:hover {
+  background-color: #09421a;
+  color: white;
+}
+
+.dropdown-submenu {
   position: relative;
-  background-color: #f8f9fa;
-  font-family: 'Lato';
 }
 
-nav {
-  border-bottom: 2px solid grey;
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  right: 100%;
+  margin-top: -1px;
 }
 
-.nav-item a {
-  color: #09421a;
-}
-
-.nav-item a:hover {
-  color: #09421a;
-}
-
-.btn-masuk {
-  background-color: #09421a;
-  color: white;
-}
-
-.btn-masuk:hover {
-  background-color: #09421a;
-  color: white;
-}
-
+/* lomba card styling */
 #lomba {
-  display: flex;
-  margin: 80px 0px 0px;
-  gap: 32px;
-  background: #f8f9fa;
-  color: #f8f9fa;
+  color: white;
 }
 
-#lomba .container {
-  background-color: #f8f9fa;
-}
-
-#lomba .card {
+.card-lomba {
+  border: none;
+  border-radius: 13px;
   background-color: #125d1b;
-  border-radius: 16px;
 }
 
-#lomba .card img {
-  height: 93.33px;
-  width: 73.33px;
-  margin: 16px 134px 0 134px;
+.card-body > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-#lomba a {
-  margin-top: -1rem;
+.card-body > ul li {
+  opacity: 0.7;
+  font-size: 12px;
 }
 
-#timeline {
-  margin-top: -10rem;
-}
+/* timeline styling */
 
-.section-footer {
-=======
-    position: relative;
-    background-color: #F8F9FA;
-    font-family: 'Lato';
-}
-  
-nav {
-    border-bottom: 2px solid grey;
-}
-
-.nav-item a {
-    color: #09421a;
-  }
-  
-  .nav-item a:hover {
-    color: #09421a;
-  }
-  
-  .btn-masuk {
-    background-color: #09421a;
-    color: white;
-  }
-  
-  .btn-masuk:hover {
-    background-color: #09421a;
-    color: white;
-  }
-
-
-#lomba {
-    display: flex;
-    margin: 80px 0px 0px;
-    gap: 32px;
-    background: #F8F9FA;
-    color: #F8F9FA;
-}
-
-#lomba .container{
-    background-color: #F8F9FA;    
-}
-
-#lomba .card{
-    background-color: #125D1B;
-    border-radius: 16px;
-}
-
-#lomba .card img{
-    height: 93.33px;
-    width: 73.33px;
-    margin: 16px 134px 0 134px;
-}
-
-#lomba a{
-  margin-top: -1.00rem;
-}
-
-#timeline{
-  margin-top: -10rem;
-}
-
-.section-footer{
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  border-top: 2px solid grey;
-  border-bottom: 2px solid grey;
-}
-body {
-    background-color: #F8F9FA;
-    font-family: 'Lato';
-}
-  
-nav {
-    border-bottom: 2px solid grey;
-}
-
-.nav-item a {
-    color: #09421a;
-  }
-  
-  .nav-item a:hover {
-    color: #09421a;
-  }
-  
-  .btn-masuk {
-    background-color: #09421a;
-    color: white;
-  }
-  
-  .btn-masuk:hover {
-    background-color: #09421a;
-    color: white;
-  }
-
-
-#lomba {
-    display: flex;
-    margin: 80px 0px 0px;
-    gap: 32px;
-    background: #F8F9FA;
-    color: #F8F9FA;
-}
-
-#lomba .container{
-    background-color: #F8F9FA;    
-}
-
-#lomba .card{
-    background-color: #125D1B;
-    border-radius: 16px;
-}
-
-#lomba .card img{
-    height: 93.33px;
-    width: 73.33px;
-    margin: 16px 134px 0 134px;
-}
-
-#lomba a{
-  margin-top: -1.00rem;
-}
-
-.section-footer{
->>>>>>> 4355a9c152b68ad5a84aa2297bb6f36792540f55
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  border-top: 2px solid grey;
-  border-bottom: 2px solid grey;
-}
-
-<<<<<<< HEAD
-body {
-  background-color: #f8f9fa;
-  font-family: 'Lato';
-}
-
-nav {
-  border-bottom: 2px solid grey;
-}
-
-.nav-item a {
-  color: #09421a;
-}
-
-.nav-item a:hover {
-  color: #09421a;
-}
-
-.btn-masuk {
-  background-color: #09421a;
+.btn-lomba {
+  background-color: #032c17;
+  margin: 0;
+  border-radius: 8px;
+  padding-bottom: 7px;
   color: white;
+  font-weight: 300;
+  text-align: left;
+  /* transition: 0.5s; */
 }
 
-.btn-masuk:hover {
-  background-color: #09421a;
+.btn-lomba:hover {
+  background-color: #032c17;
+  margin: 0;
+  border-radius: 8px;
+  padding-bottom: 7px;
   color: white;
+  /* transition: 0.5s; */
 }
 
-#lomba {
-  display: flex;
-  margin: 80px 0px 0px;
-  gap: 32px;
-  background: #f8f9fa;
-  color: #f8f9fa;
+option {
+  background-color: #f7f2d4;
+  color: black;
 }
 
-#lomba .container {
-  background-color: #f8f9fa;
-}
-
-#lomba .card {
-  background-color: #125d1b;
-  border-radius: 16px;
-}
-
-#lomba .card img {
-  height: 93.33px;
-  width: 73.33px;
-  margin: 16px 134px 0 134px;
-}
-
-#lomba a {
-  margin-top: -1rem;
-}
-
+/* footer */
 .section-footer {
   font-family: 'Lato';
   font-style: normal;
@@ -252,74 +109,3 @@ nav {
   border-top: 2px solid grey;
   border-bottom: 2px solid grey;
 }
-
-#timeline {
-  margin-top: -10rem;
-}
-
-#timeline .container {
-=======
-#timeline{
-  margin-top: -10rem;
-}
-
-#timeline .container{
->>>>>>> 4355a9c152b68ad5a84aa2297bb6f36792540f55
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-<<<<<<< HEAD
-
-  width: 1412px;
-  height: 910px;
-
-  background: #f8f9fa;
-
-=======
-  
-  width: 1412px;
-  height: 910px;
-  
-  background: #F8F9FA;
-  
->>>>>>> 4355a9c152b68ad5a84aa2297bb6f36792540f55
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-#timeline .container-img {
-  padding: 0px;
-  gap: 48px;
-  overflow-y: scroll;
-}
-
-.container img {
-  max-width: 1034px;
-}
-<<<<<<< HEAD
-=======
-
-.fw-light{
-
-
-  height: 57px;
-
-
-  /* Paragraph/Reguler/2 */
-
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 19px;
-  text-align: justify;
-  letter-spacing: 0.5px;
-
-  /* Natural/400 */
-
-  color: #CED4DA;
-
-}
->>>>>>> 4355a9c152b68ad5a84aa2297bb6f36792540f55
