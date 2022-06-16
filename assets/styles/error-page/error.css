@@ -1,0 +1,39 @@
+body {
+  background: url(/assets/img/auth/bg.png) no-repeat center center fixed;
+  background-size: cover;
+  /* min-height: 100vh;
+      min-width: 100vw; */
+  font-family: 'Lato';
+}
+
+.btn {
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  /* margin-top: 10px; */
+  /* margin-left: 25px; */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.gagal {
+  height: 500px;
+  background-color: #125d1b;
+  border-radius: 30px;
+  color: white;
+}
+
+.text-gagal a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-error {
+  border-radius: 8px;
+  color: white;
+  background-color: #09421a;
+}
