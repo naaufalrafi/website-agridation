@@ -49,3 +49,15 @@ nav .nav-item a {
   right: 100%;
   margin-top: -1px;
 }
+
+ul li a {
+  text-decoration: none;
+}
+
+.section-footer {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}

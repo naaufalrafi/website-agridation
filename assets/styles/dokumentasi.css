@@ -59,3 +59,15 @@ ol li {
 h3 {
   font-weight: bold;
 }
+
+ul li a {
+  text-decoration: none;
+}
+
+.section-footer {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}

@@ -197,3 +197,15 @@ nav .nav-item a {
   /*   */
   background-color: #125d1b;
 }
+
+ul li a {
+  text-decoration: none;
+}
+
+.section-footer {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
