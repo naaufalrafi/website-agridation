@@ -32,7 +32,7 @@
           <img src="<?=base_url('assets/img/')?>logorem.png" alt="" width="198px" class="pt-5" style="display: block; margin: auto" />
           <h4 class="fw-bold pt-5">Masuk</h4>
           <?= $this->session->flashdata('message'); ?>
-          <form action="<?= base_url ('auth/login') ?>" method="POST">
+          <form action="<?= base_url ('Auth/Login') ?>" method="POST">
             <div class="mb-3 mt-3">
               <label for="email">Email</label>
               <input type="email" id="email" name="email" placeholder="contoh@gmail.com">
@@ -43,11 +43,9 @@
               <input type="password" id="password" name="password" placeholder="Masukan Kata Sandi Akun Anda">
               <?= form_error('password', '<small class="text-danger">', '</small>') ?>
             </div>
-            <h6 class="forgot"><a href="lupaSandi.html">Lupa Kata Sandi?</a></h6>
-            <a href="#">
+            <h6 class="forgot"><a href="<?= base_url('Auth/Forgotpassword')?>">Lupa Kata Sandi?</a></h6>
               <button type="submit" class="btn" style="color: white;">Masuk</button>
-            </a>
-            <h6 class="daftar"><span>Belum Punya Akun?</span> <a href="<?= base_url('auth/regist')?>">Daftar Sekarang</a></h6>
+            <h6 class="daftar"><span>Belum Punya Akun?</span> <a href="<?= base_url('Auth/Regist')?>">Daftar Sekarang</a></h6>
           </form>
         </div>
       </div>

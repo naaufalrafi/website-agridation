@@ -1,0 +1,19 @@
+.sukses {
+  background-color: #0a6a3e;
+  border-radius: 15px;
+}
+
+.teks p {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.peringatan {
+  background-color: #7a071a;
+  border-radius: 15px;
+}
+
+.info {
+  background-color: #102c7a;
+  border-radius: 15px;
+}

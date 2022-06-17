@@ -1,18 +1,18 @@
 <?php
-class regist extends CI_Controller
+class Regist extends CI_Controller
 {
     public function __construct()
     {
         parent::__construct();
         $this->load->library('form_validation', 'session');
-        $this->load->model('auth/m_user');
+        $this->load->model('Auth/M_user');
         $this->load->helper('url', 'form');
     }
         public function index()
     {
 
         if ($this->session->userdata('email')) {
-            redirect('user/dashboard');
+            redirect('Peserta/Profil');
         }
 
         //generate simple random code
@@ -42,7 +42,7 @@ class regist extends CI_Controller
         $this->form_validation->set_rules('password2', 'Password', 'required|trim|matches[password1]');
         if ($this->form_validation->run() == false) {
             $data['title'] = 'Registration';
-            $this->load->view('auth/v_regist', $data);
+            $this->load->view('Auth/v_regist', $data);
         } else {
             $data = [
                 'name' => $nama_lengkap = htmlspecialchars($this->input->post('nama_lengkap', true)),
@@ -52,17 +52,18 @@ class regist extends CI_Controller
                 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
                 'code' => $code,
                 'verified' => false,
+                'id_role' => 2,
                 'profile' => 'default.jpg',
-                'date_created' => time()
+                'date_created' => date('Y-m-d H:i:s')
             ];
-            $id = $this->m_user->insertid($data);
+            $id = $this->M_user->insertid($data);
             // $this->db->insert('user', $data);
             //set up email
             $config = array(
                 'protocol' => 'smtp',
                 'smtp_host'	=>	'ssl://smtp.googlemail.com',
-                'smtp_user'	=>	'kelasku1602@gmail.com',
-			    'smtp_pass'	=>	'iwyngiyzzrpgydga',
+                'smtp_user'	=>	'agridationsvipb@gmail.com',
+			    'smtp_pass'	=>	'jbayoegxxbitisro',
                 'smtp_port'	=>	465,
                 'mailtype'	=>	'html',
                 'charset'	=>	'utf-8',
@@ -81,7 +82,7 @@ class regist extends CI_Controller
 							<p>Your Account:</p>
 							<p>Email: " . $email . "</p>
 							<p>Please click the link below to activate your account.</p>
-                            <h4><a href='" . base_url() . "auth/login/activate" . "/" . $id . "/" . $code . "'>Activate My Account</a></h4>
+                            <h4><a href='" . base_url() . "Auth/Login/Activate" . "/" . $id . "/" . $code . "'>Activate My Account</a></h4>
 						</body>
 						</html>
 						";
@@ -103,7 +104,7 @@ class regist extends CI_Controller
 
             // $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Akun Anda berhasil dibuat
             // </div>');
-            redirect('auth/login');
+            redirect('Auth/Login');
         }
     }
     

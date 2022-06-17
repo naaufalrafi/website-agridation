@@ -32,7 +32,7 @@
                     <img src="<?=base_url('assets/img/')?>logorem.png" alt="" width="198px" class="pt-5"
                         style="display: block; margin: auto" />
                     <h4 class="fw-bold pt-5">Daftar</h4>
-                    <form action="<?php echo base_url('auth/regist'); ?>" method="POST">
+                    <form action="<?php echo base_url('Auth/Regist'); ?>" method="POST">
                         <div class="mb-3 mt-3">
                             <label for="nama">Nama Lengkap</label>
                             <input type="text" id="nama_lengkap" name="nama_lengkap" value="<?= set_value('nama_lengkap'); ?>" placeholder="Masukan Nama Lengkap Anda">
@@ -76,12 +76,10 @@
                             <input type="password" id="password2" name="password2"
                                 placeholder="Masukan Kembali Kata Sandi">
                         </div>
-                        <a href="#">
                             <button type="submit" class="btn mb-3 mt-3" style="color: white;">Daftar</button>
-                        </a>
                         <hr>
-                        <h6 class="daftar mb-3 mt-3"><a href="lupaSandi.html">Lupa Kata Sandi?</a></h6>
-                        <h6 class="daftar mb-3 mt-3"><span>Sudah Memiliki Akun?</span><a href="<?= base_url('auth/login')?>">Masuk</a>
+                        <h6 class="daftar mb-3 mt-3"><a href="<?= base_url('Auth/Forgotpassword')?>">Lupa Kata Sandi?</a></h6>
+                        <h6 class="daftar mb-3 mt-3"><span>Sudah Memiliki Akun?</span><a href="<?= base_url('Auth/Login')?>">Masuk</a>
                         </h6>
                     </form>
                 </div>

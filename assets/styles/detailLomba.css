@@ -1,0 +1,117 @@
+/* Default Home Styling */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.btn {
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: 10px;
+  margin-left: 25px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/* Navbar styling */
+nav {
+  border-bottom: 2px solid grey;
+}
+
+nav .nav-item a {
+  color: #09421a;
+}
+
+.nav-item a:hover {
+  color: #09421a;
+}
+
+.btn-masuk {
+  background-color: #09421a;
+  color: white;
+}
+
+.btn-masuk:hover {
+  background-color: #09421a;
+  color: white;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  right: 100%;
+  margin-top: -1px;
+}
+
+.btn-download {
+  margin-left: 0;
+  color: #715c20;
+  border: 1px solid #715c20;
+  border-radius: 8px;
+}
+
+.btn-download:hover {
+  color: white;
+  background-color: #715c20;
+}
+
+ol {
+  margin: 0;
+  padding-left: 17px;
+}
+
+.list-lomba > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-lomba > ul > li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.list-lomba > ul > li > ul {
+  padding: 0;
+  padding-left: 13px;
+  list-style-type: disc;
+}
+
+.list-lomba-inside > ul {
+  padding: 0;
+  padding-left: 13px;
+  list-style-type: disc;
+}
+
+.btn-daftar {
+  color: white;
+  background-color: #09421a;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 1px solid #09421a;
+  box-sizing: border-box;
+}
+
+.btn-daftar:hover {
+  border: 1px solid #09421a;
+  color: #09421a;
+  background-color: transparent;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.section-footer {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}

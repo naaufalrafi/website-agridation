@@ -1,10 +1,10 @@
 <?php
 
-class home extends CI_Controller
+class Home extends CI_Controller
 {
     public function index()
     {
-         $data['title'] = "AGRIDATION";
+        $data['title'] = "Agridation 2022";
         $this->load->view('templates/header', $data);
         $this->load->view('index');
         $this->load->view('templates/footer');

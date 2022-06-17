@@ -1,0 +1,107 @@
+/* Default Home Styling */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.btn {
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: 10px;
+  margin-left: 25px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/* Navbar styling */
+nav {
+  border-bottom: 2px solid grey;
+}
+
+nav .nav-item a {
+  color: #09421a;
+}
+
+.nav-item a:hover {
+  color: #09421a;
+}
+
+.btn-masuk {
+  background-color: #09421a;
+  color: white;
+}
+
+.btn-masuk:hover {
+  background-color: #09421a;
+  color: white;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  right: 100%;
+  margin-top: -1px;
+}
+
+/* main styling */
+#hero {
+  background-image: url(../img/acara/img-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+
+.card-pembicara {
+  background-color: #f7f2d4;
+  height: 390px;
+  border: none;
+}
+
+.btn-cart {
+  background-color: #09421a;
+  color: white;
+}
+
+.btn-cart:hover {
+  background-color: #09421a;
+  color: white;
+}
+
+.btn-download {
+  background-color: #f8f9fa;
+  margin: 0;
+  border: 1px solid #715c20;
+  border-radius: 8px;
+  padding-bottom: 7px;
+  color: #715c20;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .ww-img {
+    width: 100%;
+  }
+
+  .miniEvent {
+    width: 100%;
+  }
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.section-footer {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
