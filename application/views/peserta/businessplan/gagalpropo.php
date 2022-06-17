@@ -4,11 +4,11 @@
                     <img src="<?= base_url('assets/icon/')?>ArrowNextDashboard.svg" class="img-fluid ps-2 opacity-75" alt="">
                     <h5 class="mt-1 ps-2 opacity-75">Proposal</h5>
                     <img src="<?= base_url('assets/icon/')?>ArrowNextDashboard.svg" class="img-fluid ps-2 opacity-75" alt="">
-                    <h5 class="mt-1 ps-2 opacity-75">Flyer</h5>
+                    <h5 class="mt-1 ps-2">Flyer</h5>
                     <img src="<?= base_url('assets/icon/')?>ArrowNextDashboard.svg" class="img-fluid ps-2 opacity-75" alt="">
                     <h5 class="mt-1 ps-2 opacity-75">Technical Meeting</h5>
                     <img src="<?= base_url('assets/icon/')?>ArrowNextDashboard.svg" class="img-fluid ps-2 opacity-75" alt="">
-                    <h5 class="mt-1 ps-2">Presentasi</h5>
+                    <h5 class="mt-1 ps-2 opacity-75">Presentasi</h5>
                     <img src="<?= base_url('assets/icon/')?>ArrowNextDashboard.svg" class="img-fluid ps-2 opacity-75" alt="">
                     <h5 class="mt-1 ps-2 opacity-75">Pengumuman Pemenang</h5>
                 </div>

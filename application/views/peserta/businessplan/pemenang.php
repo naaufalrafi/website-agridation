@@ -8,25 +8,20 @@
                     <img src="<?= base_url('assets/icon/')?>ArrowNextDashboard.svg" class="img-fluid ps-2 opacity-75" alt="">
                     <h5 class="mt-1 ps-2 opacity-75">Technical Meeting</h5>
                     <img src="<?= base_url('assets/icon/')?>ArrowNextDashboard.svg" class="img-fluid ps-2 opacity-75" alt="">
-                    <h5 class="mt-1 ps-2">Presentasi</h5>
+                    <h5 class="mt-1 ps-2 opacity-75">Presentasi</h5>
                     <img src="<?= base_url('assets/icon/')?>ArrowNextDashboard.svg" class="img-fluid ps-2 opacity-75" alt="">
-                    <h5 class="mt-1 ps-2 opacity-75">Pengumuman Pemenang</h5>
+                    <h5 class="mt-1 ps-2">Pengumuman Pemenang</h5>
                 </div>
-                <div class="container d-flex justify-content-center align-items-center flex-column mt-4">
-                    <img src="<?= base_url('assets/Illustration/')?>gagal.svg" class="img-fluid" style="max-width: 500px;" alt="">
+                <div class="container d-flex justify-content-center align-items-center flex-column mt-4"
+                    style="height: 500px;">
+                    <img src="<?= base_url('assets/Illustration/')?>finish.svg" class="img-fluid" style="max-width: 500px;" alt="">
                     <div class="text text-center mt-3">
-                        <h3>Gagal</h3>
-                        </p>
-                        <p style="font-size: 14px; max-width: 400px;">
-                            <span class="fw-bold">
-                                Maaf kamu tidak terpilih untuk
-                                tahap selanjutnya
-                            </span>
-                            <span class="opacity-75">
-                                Perjalananmu belum berakhir disini
-                                Ayo Mulai Perjalan Barumu dengan Ikuti <a href="<?= base_url('Acara/Webinarworkshop')?>"
+                        <h3>Pengumuman Pemenang</h3>
+                        <p style="font-size: 14px; max-width: 400px;"><span class="opacity-75">Terimakasih Telah Menjadi
+                                Selamat dan Terimakasih untuk Karya dan Kotribusimu ikuti</span> <a href="#"
                                 class="fw-bold">Webinar & Workshop
-                            </span>
+                            </a>
+                            dan Nantikan Hasil Terbaikmu
                         </p>
                     </div>
                 </div>

@@ -6,6 +6,8 @@
                         <img src="<?= base_url('assets/icon/')?>ArrowNextDashboard.svg" class="img-fluid ps-2 opacity-75" alt="">
                         <h5 class="mt-1 ps-2 opacity-75">Flyer</h5>
                         <img src="<?= base_url('assets/icon/')?>ArrowNextDashboard.svg" class="img-fluid ps-2 opacity-75" alt="">
+                        <h5 class="mt-1 ps-2 opacity-75">Technical Meeting</h5>
+                        <img src="<?= base_url('assets/icon/')?>ArrowNextDashboard.svg" class="img-fluid ps-2 opacity-75" alt="">
                         <h5 class="mt-1 ps-2 opacity-75">Presentasi</h5>
                         <img src="<?= base_url('assets/icon/')?>ArrowNextDashboard.svg" class="img-fluid ps-2 opacity-75" alt="">
                         <h5 class="mt-1 ps-2 opacity-75">Pengumuman Pemenang</h5>
@@ -17,7 +19,7 @@
                         <h3>Pengumpulan Berhasil</h3>
                         <p style="opacity: 0.7; font-size: 14px; max-width: 400px;">Terimakasih Telah Menjadi bagian
                             dari Agen Perubahan
-                            Karyamu sedang dalam proses seleksi untuk menjadi finalis
+                            Karyamu sedang dalam proses seleksi untuk lanjut ketahap selanjutnya
                             Catat tanggalnya 9 Agustus 2022</p>
                     </div>
                 </div>

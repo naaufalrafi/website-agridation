@@ -13,12 +13,14 @@ class Businessplan extends CI_Controller
     }
     public function index(){
         $waktu_sekarang = strtotime(date('Y-m-d'));
-        //tanggal 2022-08-14
-        $waktu_acara = strtotime('2022-06-14');
-        //tanggal 2022-09-03
-        $waktu_finalis = strtotime('2022-09-03');
         //tanggal 2022-09-11
-        $waktu_presentasi = strtotime('2022-09-11');
+        $waktu_acara = strtotime('2022-09-11');
+        //tanggal 2022-08-08
+        $waktu_lolosproposal = strtotime('2022-08-08');
+        //tanggal 2022-09-04
+        $waktu_lolosflyer = strtotime('2022-09-04');
+        //tanggal 2022-09-18
+        $waktu_presentasi = strtotime('2022-09-18');
         $id_user=$this->session->userdata('id_user');
         $lombacheck = $this->M_lomba->daftarcheckb($id_user);
         $verifcheck = $this->M_lomba->verifcheckb($id_user);
@@ -39,17 +41,28 @@ class Businessplan extends CI_Controller
         }elseif($verifpk){
             $this->load->view('peserta/businessplan/prosesseleksi');
         }elseif($verifgagalpropo && $waktu_sekarang > $waktu_lolosproposal){
-            $this->load->view('peserta/businessplan/gagal');
+            $this->load->view('peserta/businessplan/gagalpropo');
         }elseif($verifgagalpropo){
             $this->load->view('peserta/businessplan/prosesseleksi');
-        }elseif($veriflolosproposal){
+        }elseif($veriflolosproposal && $waktu_sekarang > $waktu_lolosproposal){
             $this->load->view('peserta/businessplan/pengumpulanflyer');
+        }elseif($veriflolosproposal){
+            $this->load->view('peserta/businessplan/prosesseleksi');
         }elseif($verifpf){
             $this->load->view('peserta/businessplan/prosesseleksiflyer');
-        }elseif($verifgagal){
+        }elseif($verifgagal && $waktu_sekarang > $waktu_lolosflyer){
             $this->load->view('peserta/businessplan/gagal');
-        }elseif($veriffinalis){
+        }elseif($verifgagal){
+            $this->load->view('peserta/businessplan/prosesseleksiflyer');
+        }elseif($veriffinalis && $waktu_sekarang > $waktu_lolosflyer && $waktu_sekarang < $waktu_acara){
+            $this->load->view('peserta/businessplan/tm');
+        }elseif($veriffinalis && $waktu_sekarang > $waktu_acara){
             $this->load->view('peserta/businessplan/pengumpulanppt'); 
+        }elseif($veriffinalis){
+            $this->load->view('peserta/businessplan/prosesseleksiflyer');
+        }elseif($verifppt && $waktu_sekarang > $waktu_presentasi){
+            $this->load->view('peserta/businessplan/pemenang'); 
+            
         }elseif($verifppt){
             $this->load->view('peserta/businessplan/presentasi'); 
         }else{
