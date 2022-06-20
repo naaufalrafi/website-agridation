@@ -36,10 +36,10 @@
                         <a class="nav-link active" href="<?= base_url('')?>" style="color: #09421a">Beranda</a>
                     </li>
                     <li class=" nav-item">
-                        <a class="nav-link active" href="<?= base_url('Lomba')?>" style="color: #09421a;">Lomba</a>
+                        <a class="nav-link active" href="<?= base_url('Perlombaan')?>" style="color: #09421a;">Lomba</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="<?= base_url('Acara')?>" style="color: #09421a">Acara</a>
+                        <a class="nav-link active" href="<?= base_url('Webinar')?>" style="color: #09421a">Acara</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="<?= base_url('Artikel')?>" style="color: #09421a">Artikel</a>
@@ -172,15 +172,6 @@
                                 <p>Bentuk tanaman</p>
                                 <p>Kebersihan air yang menjadi wadah</p>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4"></div>
-                            <div class="col-3">
-                                <button type="button" class="btn btn-cart">30K
-                                    <img src="<?= base_url('assets/icon/')?>cart.svg" alt="">
-                                </button>
-                            </div>
-                            <div class="col-5"></div>
                         </div>
                         <div class="row">
                             <div class="col-1"></div>

@@ -76,7 +76,7 @@
             <p>Buktikan dirimu dengan menampilkan karya terbaikmu pada 6 mata lomba tingkat
               nasional dan jadikan tempat untuk mengasah kreativitas dan skillmu. Serta bersama menjadi agen perubahan
               untuk sektor pertanian indonesia yang lebih maju lagi dengan berbagai ide inovasimu</p>
-            <a href="<?= base_urL ('Lomba')?>">
+            <a href="<?= base_urL ('Perlombaan')?>">
               <button class="btn btnLomba">
                 Lihat Selengkapnya
                 <img src="<?= base_url('assets/icon/')?>arrow.svg" width="10px" class="ms-3" style="margin-bottom: 2px;" alt="">
@@ -241,7 +241,7 @@
             <h3>Ikuti Juga Acara Seru Lainnya</h3>
             <p>Jangan sampai ketinggalan 2 acara besar untuk menajdi bagian dari ratusan agen perubahan Indonesia
               lainnya pada sektor pertanian Nasional. Catat tanggalnya 25 September 2022 !!!</p>
-            <a href="<?= base_url('Acara')?>">
+            <a href="<?= base_url('Webinar')?>">
               <button class="btn btnLomba">
                 Lihat Selengkapnya
                 <img src="<?= base_url('assets/icon/')?>arrow.svg" width="10px" class="ms-3" style="margin-bottom: 2px;" alt="">
@@ -273,12 +273,12 @@
         <div class="row row-cols-1 mt-3">
           <div class="col col-lg-4">
             <div class="card cardArtikel" style="max-width: 300px; max-height: 400px;">
-              <img src="<?= base_url('assets/img/home/artikel/')?>1.svg" class="card-img-top img-fluid"
+              <img src="<?= base_url('assets/img/artikel/aslfkasjl.png')?>" class="card-img-top img-fluid"
                 style=" width: 280px; display: block; margin: auto; padding-top: 10px;">
               <div class="card-body">
-                <h6>Agribisnis - 21 April 2022</h6>
-                <h4>Pertumbuhan Microgen Kankung</h4>
-                <a href="#">
+                <h6>Ekonomi - 20 Jun 2022</h6>
+                <h4>Upaya Pembinaan UMKM  dalam Mendukung Ekomoni Negara</h4>
+                <a href="<?= base_url('Artikel/detail/1')?>">
                   Baca Artikel
                 </a>
               </div>
@@ -286,12 +286,12 @@
           </div>
           <div class="col col-lg-4 d-none d-lg-block">
             <div class="card cardArtikel" style="max-width: 300px; max-height: 400px;">
-              <img src="<?= base_url('assets/img/home/artikel/')?>2.svg" class="card-img-top img-fluid"
+              <img src="<?= base_url('assets/img/artikel/23517.jpg')?>" class="card-img-top img-fluid"
                 style="width: 280px; display: block; margin: auto; padding-top: 10px;">
               <div class="card-body">
-                <h6>Pengembangan diri - 13 April 2022</h6>
-                <h4>Menjadi Generasi Gen Z Dengan Filosofi Stoic</h4>
-                <a href="#">
+                <h6>Agribisnis - 20 Jun 2022</h6>
+                <h4>Keunggulan Pertanian Hidroponik</h4>
+                <a href="<?= base_url('Artikel/detail/2')?>">
                   Baca Artikel
                 </a>
               </div>

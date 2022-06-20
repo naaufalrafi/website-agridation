@@ -13,13 +13,14 @@ class Webinarworkshop extends CI_Controller
         }
     }
     public function index(){
+        date_default_timezone_set("Asia/Jakarta");
         $id_user=$this->session->userdata('id_user');
         $lombacheck = $this->M_acara->daftarcheck($id_user);
         $verifcheck = $this->M_acara->verifcheck($id_user);
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $this->load->view('peserta/templates/header',$data);
         if($lombacheck){
-            $this->load->view('peserta/lkti/waitverif');
+            $this->load->view('peserta/webinar/waitverif');
         }elseif($verifcheck){
             $this->load->view('peserta/webinar/tiket');
         }else{
@@ -91,6 +92,8 @@ class Webinarworkshop extends CI_Controller
                     }
                 }
             } 
+            date_default_timezone_set("Asia/Jakarta");
+            $saatini = date('Y-m-d H:i:s');
             $data = array(
                 'nama' => $nama_lengkap,
                 'bukti_identitas' => $file_identitas,
@@ -98,7 +101,7 @@ class Webinarworkshop extends CI_Controller
                 'bukti_posting' => $file_posting,
                 'id_user'   => $this->session->userdata('id_user'),
                 'status'    => 'M',
-                'date_created' => date('Y-m-d H:i:s')
+                'date_created' => $saatini
             );
             $query = $this->M_acara->input_pendaftaran('gwebinar', $data);
             redirect('Acara/Webinarworkshop');

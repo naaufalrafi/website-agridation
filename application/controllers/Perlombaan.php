@@ -1,6 +1,6 @@
 <?php
 
-class Lomba extends CI_Controller
+class Perlombaan extends CI_Controller
 {
     public function index()
     {

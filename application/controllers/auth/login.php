@@ -29,14 +29,12 @@ class Login extends CI_Controller
     {
         $email = $this->input->post('email');
         $password = $this->input->post('password');
-
         $user = $this->db->get_where('user', ['email' => $email])->row_array();
         if ($user) {
             //adduser
             if ($user) {
                 if ($user['verified'] < 1) {
-                    $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Email anda belum terverifikasi
-            </div>');
+                    $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Email anda belum terverifikasi</div>');
                     redirect('Auth/Login');
                 } elseif (password_verify($password, $user['password'])) {
                     $this->session->userdata('email', $user);
@@ -45,11 +43,16 @@ class Login extends CI_Controller
                         'email' => $user['email'],
                         'id_user' => $user['id_user'],
                         'name' => $user['name'],
+                        'id_role' => $user['id_role'],
                         'status' => 'login'
 
                     ];
                     $this->session->set_userdata($data);
-                    redirect('Peserta/Profil');
+                    if ($user['id_role'] == 2) {
+                        redirect('Peserta/Profil');
+                    } else {
+                        redirect('Admin/Dashboard');
+                    }
                 } else {
                     $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Password anda salah!
             </div>');

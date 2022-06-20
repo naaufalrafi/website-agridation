@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="<?= base_url('assets/styles/dashboard/lomba-lainnya/')?>techmeet.css">
     <link rel="stylesheet" href="<?= base_url('assets/styles/dashboard/lomba-lainnya/')?>pengumpulan.css">
     <link rel="stylesheet" href="<?= base_url('assets/styles/dashboard/lkti/')?>presentasi.css">
+    <link rel="stylesheet" href="<?= base_url('assets/styles/dashboard/')?>ww-pendaftaran.css">
+    <link rel="stylesheet" href="<?= base_url('assets/styles/dashboard/')?>minievent-pendaftaran.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
@@ -76,10 +78,10 @@
                         class="dropdown-toggle">Acara</a>
                     <ul class="collapse list-unstyled sub-menu" id="pageSubmenu">
                         <li>
-                            <a href="#">Webinar & Workshop</a>
+                            <a href="<?= base_url('Acara/Webinarworkshop')?>">Webinar & Workshop</a>
                         </li>
                         <li>
-                            <a href="#">Mini Event</a>
+                            <a href="<?= base_url('Acara/Minievent')?>">Mini Event</a>
                         </li>
                     </ul>
                 </li>
@@ -112,6 +114,6 @@
                             </a>
                         </li>
                     </ul>
-
+                    
                 </div>
             </nav>

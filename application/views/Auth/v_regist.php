@@ -36,19 +36,19 @@
                         <div class="mb-3 mt-3">
                             <label for="nama">Nama Lengkap</label>
                             <input type="text" id="nama_lengkap" name="nama_lengkap" value="<?= set_value('nama_lengkap'); ?>" placeholder="Masukan Nama Lengkap Anda">
-                            <?= form_error('nama_lengkap', '<small class="text-danger">', '</small>') ?>
+                            <?= form_error('nama_lengkap', '<small class="text-white">', '</small>') ?>
                         </div>
                         <div class="mb-3 mt-3">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" value="<?= set_value('email'); ?>" placeholder="Masukan Email Anda">
-                            <?= form_error('email', '<small class="text-danger">', '</small>') ?>
+                            <?= form_error('email', '<small class="text-white">', '</small>') ?>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <label for="nik">Nomor Telepon</label>
                                 <br>
                                 <input type="number" class="nik" id="phone" value="<?= set_value('phone'); ?>" name="phone" placeholder="Masukan No Telepon Anda">
-                                <?= form_error('phone', '<small class="text-danger">', '</small>') ?>
+                                <?= form_error('phone', '<small class="text-white">', '</small>') ?>
                             </div>
                             <div class="col">
                                 <label for="nik">Jenis Kelamin</label>
@@ -63,13 +63,13 @@
                                     Perempuan
                                 </label>
                                 <br>
-                                 <?= form_error('gender', '<small class="text-danger">', '</small>') ?>
+                                 <?= form_error('gender', '<small class="text-white">', '</small>') ?>
                             </div>
                         </div>
                         <div class="mb-3 mt-3">
                             <label for="password">Kata Sandi</label>
                             <input type="password" id="password1" name="password1" placeholder="Masukan Kata Sandi">
-                            <?= form_error('password1', '<small class="text-danger">', '</small>') ?>
+                            <?= form_error('password1', '<small class="text-white">', '</small>') ?>
                         </div>
                         <div class="mb-3 mt-3">
                             <label for="password">Konfirmasi Kata Sandi</label>

@@ -8,11 +8,13 @@ class Podcast extends CI_Controller
         $this->load->library('session');
         $this->load->model('M_lomba');
         $this->load->helper('date');
+        date_default_timezone_set("Asia/Jakarta");
         if ($this->session->userdata('status') != 'login'){
             redirect('Auth/Login');
         }
     }
     public function index(){
+        date_default_timezone_set("Asia/Jakarta");
         $waktu_sekarang = strtotime(date('Y-m-d'));
         //tanggal 2022-08-21
         $waktu_acara = strtotime('2022-08-21');
@@ -120,6 +122,8 @@ class Podcast extends CI_Controller
                     }
                 }
             } 
+            date_default_timezone_set("Asia/Jakarta");
+            $saatini = date('Y-m-d H:i:s');
             $data = array(
                 'nama_ketua' => $nama_lengkap1,
                 'anggota1' => $nama_anggota1,
@@ -130,7 +134,7 @@ class Podcast extends CI_Controller
                 'id_lomba' => 2,
                 'id_user'   => $this->session->userdata('id_user'),
                 'status'    => 'M',
-                'date_created' => date('Y-m-d H:i:s')
+                'date_created' => $saatini
             );
             $query = $this->M_lomba->input_pendaftaran('glomba', $data);
             redirect('Lomba/Podcast');

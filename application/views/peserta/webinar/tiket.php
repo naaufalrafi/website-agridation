@@ -1,12 +1,7 @@
-<div class="main-content">
-    <div class="page-content">
-        <div class="container-fluid">
-            <!-- end page title -->
-            <div class="row">
-                <div class="col-md-10 col-12">
-                    <h1>TIKET</h1>
+<div class="isi-konten">
+                <div class="container d-flex justify-content-center align-items-center">
+                    <a href=" #">
+                        <img src="<?= base_url('assets/img/dashboard/ww/')?>tiket.png" class="img-fluid" alt="">
+                    </a>
                 </div>
-                <!-- end col-->
             </div>
-        </div>
-    </div>

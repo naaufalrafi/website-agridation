@@ -98,6 +98,36 @@
                         </a>
                     </div>
                     <?php endforeach ?>
+                    <?php foreach ($webinar as $w):?>
+                        <div class="col">
+                        <a href="<?= base_url('Acara/Webinarworkshop')?>">
+                        <div class="card card-lomba shadow">
+                            <div class="gambar-card d-flex justify-content-center" style="height: 128px;">
+                                <img src="<?= base_url('assets/Illustration/')?>ww.svg" class="img-fluid mx-auto m-3" width="110px"
+                                    alt="Illustration-bp">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Webinar Workshop</h5>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <?php endforeach ?>
+                    <?php foreach ($minie as $m):?>
+                        <div class="col">
+                        <a href="<?= base_url('Acara/Minievent')?>">
+                        <div class="card card-lomba shadow">
+                            <div class="gambar-card d-flex justify-content-center" style="height: 128px;">
+                                <img src="<?= base_url('assets/Illustration/')?>minievent.svg" class="img-fluid mx-auto m-3"
+                                    width="110px" alt="Illustration-bp">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Mini Event</h5>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <?php endforeach ?>
                 </div>
                 <h4 class="mt-3">Ikuti Berbagai Macam Perlombaan</h4>
                 <div class="row row-cols-1 row-cols-md-3 g-4">

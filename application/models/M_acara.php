@@ -67,6 +67,16 @@ class M_acara extends  CI_Model
         $query = $this->db->query("SELECT * FROM glomba WHERE id_user=$id AND id_lomba=6");
         return $query->result();
     }
+    function datawebinar($id)
+    {
+        $query = $this->db->query("SELECT * FROM gwebinar WHERE id_user=$id");
+        return $query->result();
+    }
+    function dataminie($id)
+    {
+        $query = $this->db->query("SELECT * FROM gminie WHERE id_user=$id");
+        return $query->result();
+    }
     function update_statustm($where, $data, $table)
     {
         $this->db->where($where);

@@ -5,6 +5,8 @@ class Regist extends CI_Controller
     {
         parent::__construct();
         $this->load->library('form_validation', 'session');
+        $this->load->helper('date');
+        date_default_timezone_set("Asia/Jakarta");
         $this->load->model('Auth/M_user');
         $this->load->helper('url', 'form');
     }
@@ -44,6 +46,8 @@ class Regist extends CI_Controller
             $data['title'] = 'Registration';
             $this->load->view('Auth/v_regist', $data);
         } else {
+            date_default_timezone_set("Asia/Jakarta");
+            $saatini = date('Y-m-d H:i:s');
             $data = [
                 'name' => $nama_lengkap = htmlspecialchars($this->input->post('nama_lengkap', true)),
                 'email' => $email = htmlspecialchars($this->input->post('email', true)),
@@ -54,7 +58,7 @@ class Regist extends CI_Controller
                 'verified' => false,
                 'id_role' => 2,
                 'profile' => 'default.jpg',
-                'date_created' => date('Y-m-d H:i:s')
+                'date_created' => $saatini
             ];
             $id = $this->M_user->insertid($data);
             // $this->db->insert('user', $data);

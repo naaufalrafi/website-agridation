@@ -1,6 +1,6 @@
 <?php
 
-class Acara extends CI_Controller
+class Webinar extends CI_Controller
 {
     public function index()
     {

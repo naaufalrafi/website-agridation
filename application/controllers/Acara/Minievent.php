@@ -13,9 +13,11 @@ class Minievent extends CI_Controller
         }
     }
     public function index(){
+        date_default_timezone_set("Asia/Jakarta");
+        // $waktu_sekarang = strtotime('2022-08-21');
         $waktu_sekarang = strtotime(date('Y-m-d'));
-        //tanggal 2022-8-21
-        $waktu_acara = strtotime('2022-6-15');
+        //tanggal 2022-8-20
+        $waktu_acara = strtotime('2022-08-20');
         $id_user=$this->session->userdata('id_user');
         $lombacheck = $this->M_acara->daftarcheckm($id_user);
         $verifcheck = $this->M_acara->verifcheckm($id_user);
@@ -23,7 +25,7 @@ class Minievent extends CI_Controller
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $this->load->view('peserta/templates/header',$data);
         if($lombacheck){
-            $this->load->view('peserta/lkti/waitverif');
+            $this->load->view('peserta/minievent/waitverif');
         }elseif($verifcheck && $waktu_sekarang > $waktu_acara){
             $this->load->view('peserta/minievent/pengumpulankarya');
         }elseif($verifcheck){
@@ -116,6 +118,8 @@ class Minievent extends CI_Controller
                     }
                 }
             } 
+            date_default_timezone_set("Asia/Jakarta");
+            $saatini = date('Y-m-d H:i:s');
             $data = array(
                 'nama' => $nama_lengkap,
                 'bukti_identitas' => $file_identitas,
@@ -124,7 +128,7 @@ class Minievent extends CI_Controller
                 'bukti_pembelian' => $file_pembelian,
                 'id_user'   => $this->session->userdata('id_user'),
                 'status'    => 'M',
-                'date_created' => date('Y-m-d H:i:s')
+                'date_created' => $saatini
             );
             $query = $this->M_acara->input_pendaftaran('gminie', $data);
             redirect('Acara/Minievent');

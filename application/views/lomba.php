@@ -38,10 +38,10 @@
             <a class="nav-link active" href="<?= base_url('')?>" style="color: #09421a">Beranda</a>
           </li>
           <li class=" nav-item">
-            <a class="nav-link active" href="<?= base_url('Lomba')?>" style="color: #09421a;">Lomba</a>
+            <a class="nav-link active" href="<?= base_url('Perlombaan')?>" style="color: #09421a;">Lomba</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="<?= base_url('Acara')?>" style="color: #09421a">Acara</a>
+            <a class="nav-link active" href="<?= base_url('Webinar')?>" style="color: #09421a">Acara</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="<?= base_url('Artikel')?>" style="color: #09421a">Artikel</a>

@@ -7,7 +7,9 @@ class Profil extends CI_Controller
         parent::__construct();
         $this->load->library('session');
         $this->load->model('M_acara');
-        if ($this->session->userdata('status') != 'login'){
+        if ($this->session->userdata('id_role') != 2){
+            redirect('Admin/Dashboard');
+        }elseif($this->session->userdata('status') != 'login'){
             redirect('Auth/Login');
         }
     }
@@ -23,6 +25,8 @@ class Profil extends CI_Controller
         $data['podcast'] = $this->M_acara->datapodcast($id_user);
         $data['poster'] = $this->M_acara->dataposter($id_user);
         $data['cvideo'] = $this->M_acara->datacvideo($id_user);
+        $data['minie'] = $this->M_acara->dataminie($id_user);
+        $data['webinar'] = $this->M_acara->datawebinar($id_user);
         $this->load->view('peserta/templates/header',$data);
         $this->load->view('peserta/profil',$data);
         $this->load->view('peserta/templates/footer');
