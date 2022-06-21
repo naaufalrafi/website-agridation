@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <link rel="shortcut icon" href="<?= base_url('assets/img/')?>logorem.png">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
@@ -73,7 +73,7 @@
                 <li>Umum (15-25 Tahun)</li>
                 <li>Setiap tim teridiri dari dua sampai tiga orang</li>
               </ul>
-              <a href="https://ipb.link/booklet-lkti-agridation2022" target="_blank"
+              <a href="<?= base_url('Perlombaan/detail/')?>5"
                 class="text-decoration-none text-white float-end">Lihat selengkapnya &gt;&gt;</a>
             </div>
           </div>
@@ -81,7 +81,7 @@
         <div class="col mb-3">
           <div class="card card-lomba">
             <div class="img-card-lomba d-flex justify-content-center" style="height: 150px;">
-              <img src="<?= base_url('assets/Illustration/')?>Poster.svg" class="img-fluid pt-3 mx-auto" alt="Poster Competition">
+              <img src="<?= base_url('assets/Illustration/')?>Podcast.svg" class="img-fluid pt-3 mx-auto" alt="Poster Competition">
             </div>
             <div class="card-body">
               <div class="card-block text-center border-bottom border-white mb-3">
@@ -91,7 +91,7 @@
                 <li>Umum (15-25 Tahun)</li>
                 <li>Bersifat individu atau kelompok (2 orang)</li>
               </ul>
-              <a href="https://ipb.link/booklet-podcast-agridation2022" target="_blank"
+              <a href="<?= base_url('Perlombaan/detail/')?>4"
                 class="text-decoration-none text-white float-end">Lihat selengkapnya &gt;&gt;</a>
             </div>
           </div>
@@ -108,7 +108,7 @@
               <ul>
                 <li>Mahasiswa aktif D3/D4/S1 di PTN maupun PTS seluruh Indonesia</li>
               </ul>
-              <a href="https://ipb.link/booklet-bp-agridation2022" target="_blank"
+              <a href="<?= base_url('Perlombaan/detail/')?>6"
                 class="text-decoration-none text-white float-end">Lihat selengkapnya &gt;&gt;</a>
             </div>
           </div>
@@ -128,7 +128,7 @@
                 <li>Umum (15-25 Tahun)</li>
                 <li>Bersifat Kelompok (2-4 Anggota)</li>
               </ul>
-              <a href="https://ipb.link/booklet-cv-agridation2022" target="_blank"
+              <a href="<?= base_url('Perlombaan/detail/')?>3"
                 class="text-decoration-none text-white float-end">Lihat selengkapnya &gt;&gt;</a>
             </div>
           </div>
@@ -146,7 +146,7 @@
                 <li>Umum (15-25 Tahun)</li>
                 <li>Bersifat individu</li>
               </ul>
-              <a href="https://ipb.link/booklet-fotografi-agridation2022" target="_blank"
+              <a href="<?= base_url('Perlombaan/detail/')?>1"
                 class="text-decoration-none text-white float-end">Lihat selengkapnya &gt;&gt;</a>
             </div>
           </div>
@@ -164,7 +164,7 @@
                 <li>Umum (15-25 Tahun)</li>
                 <li>Bersifat individu</li>
               </ul>
-              <a href="https://ipb.link/booklet-poster-agridation2022" target="_blank"
+              <a href="<?= base_url('Perlombaan/detail/')?>2"
                 class="text-decoration-none text-white float-end">Lihat selengkapnya &gt;&gt;</a>
             </div>
           </div>

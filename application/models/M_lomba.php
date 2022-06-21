@@ -162,4 +162,9 @@ class M_lomba extends  CI_Model
         $this->db->where($where);
         $this->db->update($table, $data);
     }
+     function detaillomba($id)
+     {
+        $query = $this->db->query("SELECT * FROM dlomba WHERE id_dlomba=$id");
+        return $query->result();
+     }
 }

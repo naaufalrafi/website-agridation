@@ -193,7 +193,7 @@
 
                 <div class="carousel-item">
                   <div class="card cardInfo d-block" style="width: 305px; height: 300px; margin-left: 52px;">
-                    <img src="<?= base_url('assets/img/lomba/')?>kti.svg" class="card-img-top"
+                    <img src="<?= base_url('assets/img/lomba/')?>lkti.svg" class="card-img-top"
                       style="display: block; margin: auto; width: 128px;" alt="...">
                     <div class="card-body">
                       <h4 class="card-title text-center">LKTI</h4>

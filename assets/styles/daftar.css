@@ -1,5 +1,5 @@
 body {
-  background: url(/assets/img/auth/bg.png) no-repeat center center fixed;
+  background: url("https://iili.io/Xb1vcv.png") no-repeat center center fixed;
   background-size: cover;
   /* min-height: 100vh;
     min-width: 100vw; */
@@ -38,7 +38,7 @@ body {
   scrollbar-color: #125d1b #115a19;
 }
 
-form > div > input {
+form>div>input {
   width: 100%;
   border-radius: 10px;
   box-sizing: border-box;
