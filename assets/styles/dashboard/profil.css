@@ -61,6 +61,15 @@ a:focus {
   cursor: pointer;
 }
 
+/* Buat button dashboard */
+.btn-dashboard {
+  background-color: #09421a;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
