@@ -86,12 +86,11 @@ nav .nav-item a {
 
 /* info sectio styling */
 #info {
-  height: 450px;
+  /* height: 450px; */
 }
 
 .containerInfo {
   background-color: #fffcd9;
-  height: 400px;
   border-radius: 20px;
 }
 
@@ -162,12 +161,12 @@ nav .nav-item a {
 
 /* Lainnya Section Styling */
 #lainnya {
-  height: 400px;
+  /* height: 400px; */
 }
 
 /* Artikel Section Styling */
 #artikel {
-  height: 550px;
+  /* height: 550px; */
 }
 
 .cardArtikel {
