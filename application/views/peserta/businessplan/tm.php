@@ -44,12 +44,12 @@
                         <div class="text-techmeet mt-3" style="width: 600px;">
                             <p class="fs-6 opacity-75 text-center">
                                 Ikuti Technical Meeting untuk diskusi bersama peserta lainnya dan panitia agridation
-                                Jangan lupa juga gabung Grup WA untuk informasi lebih lanjut
-                                Catat tanggalnya 11 September 2022
+                                <br>Jangan lupa juga gabung Grup WA untuk informasi lebih lanjut
+                                <br>Catat tanggalnya 11 September 2022
                             </p>
                         </div>
                     </div>
-                    <a href="#">
+                    <a href="https://chat.whatsapp.com/Bv5Sf9fM0ct2vhdLfG5Gqh" target="_blank">
                         <button type="button" class="btn btn-wa">Wa Group
                             <img src="<?= base_url('assets/icon/')?>grupwa.svg" alt="">
                         </button>

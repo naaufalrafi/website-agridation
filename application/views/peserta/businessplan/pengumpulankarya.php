@@ -50,14 +50,18 @@
                                 Jangan lupa juga gabung Grup WA untuk informasi lebih lanjut</p>
                             <div class=" row">
                                 <div class="col-6">
+                                    <a href="https://bit.ly/pengumpulankarya-BP" target="_blank">
                                     <button type="button" class="btn btn-cart">Isi Gform
                                         <img src="<?= base_url('assets/icon/')?>gform.svg" alt="">
                                     </button>
+                                    </a>
                                 </div>
                                 <div class="col-6">
+                                    <a href="https://chat.whatsapp.com/Bv5Sf9fM0ct2vhdLfG5Gqh" target="_blank">
                                     <button type="button" class="btn btn-cart">Wa Group
                                         <img src="<?= base_url('assets/icon/')?>grupwa.svg" alt="">
                                     </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

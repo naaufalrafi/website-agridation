@@ -18,11 +18,13 @@
                             <p class="fs-6 opacity-75">Ayo Lanjutkan Perjalananmu sebagai Agen Perubahan dengan
                                 mengumpulkan hasil karya terbaikmu melalui Gform dan kirimkan bukti pengisianmu kesini.
                             </p>
-                            <div class=" row">
+                            <div class="row">
                                 <div class="col">
+                                    <a href="https://ipb.link/pengumpulan-karya-creative-video-agridation-2022" target="_blank" rel="noopener noreferrer">
                                     <button type="button" class="btn btn-cart">Isi Gform
                                         <img src="<?= base_url('assets/icon/')?>gform.svg" alt="">
                                     </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

@@ -20,9 +20,11 @@
                             </p>
                             <div class=" row">
                                 <div class="col">
+                                    <a href="https://ipb.link/pengumpulankarya-lombafotografi" target="_blank" rel="noopener noreferrer">
                                     <button type="button" class="btn btn-cart">Isi Gform
                                         <img src="<?= base_url('assets/icon/')?>gform.svg" alt="">
                                     </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
