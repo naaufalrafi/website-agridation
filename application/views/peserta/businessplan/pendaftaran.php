@@ -103,6 +103,15 @@
                 </div>
                 <div class="row mt-4 align-items-center">
                     <div class="col-5">
+                        <h5>Bukti Posting Twibbon Agridation</h5>
+                    </div>
+                    <div class="col-7">
+                        <input class="form-control" name="bukti_posting" type="file" id="formFile">
+                        <?= form_error('bukti_posting', '<small class="text-white">', '</small>') ?>
+                    </div>
+                </div>
+                <div class="row mt-4 align-items-center">
+                    <div class="col-5">
                         <h5>Bukti Pembayaran</h5>
                     </div>
                     <div class="col-7">

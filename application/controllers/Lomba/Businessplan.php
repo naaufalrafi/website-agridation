@@ -87,6 +87,7 @@ class Businessplan extends CI_Controller
         ]);
         $this->form_validation->set_rules('bukti_identitas', '', 'callback_file_check');
         $this->form_validation->set_rules('bukti_follow', '', 'callback_file_check_follow');
+        $this->form_validation->set_rules('bukti_posting', '', 'callback_file_check_posting');
         $this->form_validation->set_rules('bukti_pembayaran', '', 'callback_file_check_pembayaran');
         
         if ($this->form_validation->run() == false) {
@@ -138,6 +139,22 @@ class Businessplan extends CI_Controller
                     }
                 }
             } 
+            $file_posting = $_FILES['bukti_posting']['name'];
+            if ($file_posting) {
+                if($this->form_validation->run() == true){
+                    $config['upload_path'] = './assets/media/upload/';
+                    $config['allowed_types'] = 'png|jpg|jpeg|zip|rar';
+                    $config['remove_spaces'] = TRUE;
+                    $config['encrypt_name'] = TRUE;
+
+                    $this->load->library('upload', $config);
+                    if (!$this->upload->do_upload('bukti_posting')) {
+                        echo "Image Upload Failed!";
+                    } else {
+                        $file_posting = $this->upload->data('file_name');
+                    }
+                }
+            } 
             $file_pembayaran = $_FILES['bukti_pembayaran']['name'];
             if ($file_pembayaran) {
                 if($this->form_validation->run() == true){
@@ -164,6 +181,7 @@ class Businessplan extends CI_Controller
                 'anggota4' => $nama_anggota4,
                 'bukti_identitas' => $file_identitas,
                 'bukti_follow' => $file_follow,
+                'bukti_posting' => $file_posting,
                 'bukti_pembayaran' => $file_pembayaran,
                 'id_lomba' => 3,
                 'id_user'   => $this->session->userdata('id_user'),
@@ -216,6 +234,29 @@ class Businessplan extends CI_Controller
             }
         }else{
             $this->form_validation->set_message('file_check_follow', 'Bukti Mengikuti harus diisi!');
+            return false;
+        }
+    }
+    //validation bukti posting
+    public function file_check_posting($str){
+        $allowed_mime_type_arr = array('application/x-rar-compressed','application/octet-stream','application/x-rar','application/x-zip', 'application/zip', 'application/x-zip-compressed','application/rar');
+        $mime = get_mime_by_extension($_FILES['bukti_posting']['name']);
+        
+        if(isset($_FILES['bukti_posting']['name']) && $_FILES['bukti_posting']['name']!=""){
+            if($_FILES['bukti_posting']['size']>5097152){
+                $this->form_validation->set_message('file_check_posting', 'Harap masukkan file tidak lebih dari 5Mb');
+                return false;
+            }else{
+                if(in_array($mime, $allowed_mime_type_arr)){
+                    return true;
+                }else{
+                    $this->form_validation->set_message('file_check_posting', 'Harap masukkan file zip/rar');
+                    return false;
+                    }
+            return true;
+            }
+        }else{
+            $this->form_validation->set_message('file_check_posting', 'Bukti Posting harus diisi!');
             return false;
         }
     }

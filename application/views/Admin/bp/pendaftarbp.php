@@ -34,6 +34,7 @@
                                                 <th>Bukti PPT</th>
                                                 <th>Identitas</th>
                                                 <th>Follow</th>
+                                                <th>Twibbon</th>
                                                 <th>Pembayaran</th>
                                             </tr>
                                             </thead>
@@ -193,6 +194,15 @@
                                                     <a href="<?= base_url('assets/media/upload/')?><?= $p->bukti_follow ?>" download>
                                                         <button class="btn btn-primary"><i class="fa-solid fa-download"></i></button>
                                                     </a>
+                                                </td>
+                                                <td>
+                                                    <?php if($p->bukti_posting == NULL): ?>
+                                                        -
+                                                    <?php else:?>
+                                                        <a href="<?= base_url('assets/media/upload/')?><?= $p->bukti_posting?>" download>
+                                                        <button class="btn btn-primary"><i class="fa-solid fa-download"></i></button>
+                                                    </a>
+                                                    <?php endif ?>
                                                 </td>
                                                 <td><a href="<?= base_url('assets/media/upload/')?><?= $p->bukti_pembayaran ?>" target="_blank" rel="noopener noreferrer"><img src="<?= base_url('assets/media/upload/')?><?= $p->bukti_pembayaran ?>" alt="Bukti Pembayaran <?= $p->nama_ketua ?>" width="100"></a></td>
                                             </tr>
