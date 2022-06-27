@@ -17,6 +17,7 @@ class Businessplan extends CI_Controller
         date_default_timezone_set("Asia/Jakarta");
         $waktu_sekarang = strtotime(date('Y-m-d'));
         //tanggal 2022-09-11
+        //tm
         $waktu_acara = strtotime('2022-09-11');
         //tanggal 2022-08-08
         $waktu_lolosproposal = strtotime('2022-08-08');

@@ -15,9 +15,9 @@ class Poster extends CI_Controller
     }
     public function index(){
         date_default_timezone_set("Asia/Jakarta");
-        // $waktu_sekarang = strtotime(date('Y-m-d'));
-        $waktu_sekarang = strtotime('2022-08-22');
-        //tanggal 2022-8-21
+        $waktu_sekarang = strtotime(date('Y-m-d'));
+        //$waktu_sekarang = strtotime('2022-08-22');
+        //tanggal 2022-08-21
         $waktu_acara = strtotime('2022-08-21');
         $id_user=$this->session->userdata('id_user');
         $lombacheck = $this->M_lomba->daftarcheckpo($id_user);

@@ -1,7 +1,3 @@
-
-                            
-                              
-                                    
     <div class="isi-konten">
                 <div class="top-content">
                     <div class="keterangan-text d-flex justify-content-center">

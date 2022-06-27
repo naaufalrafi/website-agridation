@@ -71,7 +71,7 @@
                 <div class="container h-100 pb-4 pt-4">
                     <div class="row mt-4">
                         <div class="col-3">
-                            <img src="<?= base_url('assets/icon/')?><?= $l->foto ?>" class="img-fluid" alt="">
+                            <img src="<?= base_url('assets/Illustration/')?><?= $l->foto ?>" class="img-fluid" alt="">
                         </div>
                         <div class="col-9">
                             <h2 class="fw-bold"><?= $l->nama_lomba ?></h2>

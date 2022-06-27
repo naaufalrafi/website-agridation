@@ -81,7 +81,7 @@
         <div class="col mb-3">
           <div class="card card-lomba">
             <div class="img-card-lomba d-flex justify-content-center" style="height: 150px;">
-              <img src="<?= base_url('assets/Illustration/')?>Podcast.svg" class="img-fluid pt-3 mx-auto" alt="Poster Competition">
+              <img src="<?= base_url('assets/Illustration/')?>podcast.svg" class="img-fluid pt-3 mx-auto" alt="Poster Competition">
             </div>
             <div class="card-body">
               <div class="card-block text-center border-bottom border-white mb-3">
@@ -154,7 +154,7 @@
         <div class="col mb-4">
           <div class="card card-lomba">
             <div class="img-card-lomba d-flex justify-content-center" style="height: 150px;">
-              <img src="<?= base_url('assets/Illustration/')?>Poster.svg" class="img-fluid pt-3 mx-auto" alt="Poster">
+              <img src="<?= base_url('assets/Illustration/')?>poster.svg" class="img-fluid pt-3 mx-auto" alt="Poster">
             </div>
             <div class="card-body ">
               <div class="card-block text-center border-bottom border-white mb-3">

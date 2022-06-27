@@ -63,6 +63,8 @@
                         <li>
                             <a href="<?= base_url('Admin/Dashboard') ?>" lass="waves-effect"><i class="fa-solid fa-house"></i><span>Dashboard</span> </a>
                         </li>
+                        <?php if($this->session->userdata('id_role') == 1) : ?>
+                        <!-- SEMUA -->
                         <li>
 							<a href="javascript: void(0);" class="has-arrow waves-effect"><i class="fa-solid fa-crop"></i><span>Desain Poster</span> </a>
 							<ul class="sub-menu" aria-expanded="true">
@@ -74,6 +76,152 @@
 								</li>
 							</ul>
 						</li>
+                        <li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"><i class="fa-solid fa-camera"></i><span>Fotografi</span> </a>
+							<ul class="sub-menu" aria-expanded="true">
+								<li> <a href="<?= base_url('Admin/Fotografi')?>">Pendaftar</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Fotografi/verifikasi')?>">Verifikasi</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Fotografi/pengumpulankarya')?>">Pengumpulan Karya</a>
+								</li>
+							</ul>
+						</li>
+                        <li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"><i class="fa-solid fa-podcast"></i><span>Podcast</span> </a>
+							<ul class="sub-menu" aria-expanded="true">
+								<li> <a href="<?= base_url('Admin/Podcast')?>">Pendaftar</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Podcast/verifikasi')?>">Verifikasi</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Podcast/pengumpulankarya')?>">Pengumpulan Karya</a>
+								</li>
+							</ul>
+						</li>
+                        <li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"><i class="fa-solid fa-video"></i><span>Creative Video</span> </a>
+							<ul class="sub-menu" aria-expanded="true">
+								<li> <a href="<?= base_url('Admin/Cvideo')?>">Pendaftar</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Cvideo/verifikasi')?>">Verifikasi</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Cvideo/pengumpulankarya')?>">Pengumpulan Karya</a>
+								</li>
+							</ul>
+						</li>
+                        <li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"><i class="fa-solid fa-book"></i><span>LKTI</span> </a>
+							<ul class="sub-menu" aria-expanded="true">
+								<li> <a href="<?= base_url('Admin/Lkti')?>">Pendaftar</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Lkti/verifikasi')?>">Verifikasi</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Lkti/pengumpulankarya')?>">Pengumpulan Karya</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Lkti/pengumpulanppt')?>">Finalis dan Pengumpulan PPT</a>
+								</li>
+							</ul>
+						</li>
+                        <li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"><i class="fa-solid fa-briefcase"></i><span>Business Plan</span> </a>
+							<ul class="sub-menu" aria-expanded="true">
+								<li> <a href="<?= base_url('Admin/Bp')?>">Pendaftar</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Bp/verifikasi')?>">Verifikasi</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Bp/pengumpulankarya')?>">Pengumpulan Proposal</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Bp/pengumpulanflyer')?>">Pengumpulan Flyer</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Bp/pengumpulanppt')?>">Finalis dan Pengumpulan PPT</a>
+								</li>
+							</ul>
+						</li>
+                        <?php elseif($this->session->userdata('id_role') == 3):?>
+                            <!-- LKTI -->
+                            <li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"><i class="fa-solid fa-book"></i><span>LKTI</span> </a>
+							<ul class="sub-menu" aria-expanded="true">
+								<li> <a href="<?= base_url('Admin/Lkti')?>">Pendaftar</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Lkti/verifikasi')?>">Verifikasi</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Lkti/pengumpulankarya')?>">Pengumpulan Karya</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Lkti/pengumpulanppt')?>">Finalis dan Pengumpulan PPT</a>
+								</li>
+							</ul>
+						</li>
+                        <?php elseif($this->session->userdata('id_role') == 4):?>
+                            <!-- PODCAST -->
+                            <li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"><i class="fa-solid fa-podcast"></i><span>Podcast</span> </a>
+							<ul class="sub-menu" aria-expanded="true">
+								<li> <a href="<?= base_url('Admin/Podcast')?>">Pendaftar</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Podcast/verifikasi')?>">Verifikasi</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Podcast/pengumpulankarya')?>">Pengumpulan Karya</a>
+								</li>
+							</ul>
+						</li>
+                        <?php elseif($this->session->userdata('id_role') == 5):?>
+                            <!-- BUSINESS PLAN -->
+                            <li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"><i class="fa-solid fa-briefcase"></i><span>Business Plan</span> </a>
+							<ul class="sub-menu" aria-expanded="true">
+								<li> <a href="<?= base_url('Admin/Bp')?>">Pendaftar</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Bp/verifikasi')?>">Verifikasi</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Bp/pengumpulankarya')?>">Pengumpulan Proposal</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Bp/pengumpulanflyer')?>">Pengumpulan Flyer</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Bp/pengumpulanppt')?>">Finalis dan Pengumpulan PPT</a>
+								</li>
+							</ul>
+						</li>
+                        <?php elseif($this->session->userdata('id_role') == 6):?>
+                            <!-- CVIDEO -->
+                            <li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"><i class="fa-solid fa-video"></i><span>Creative Video</span> </a>
+							<ul class="sub-menu" aria-expanded="true">
+								<li> <a href="<?= base_url('Admin/Cvideo')?>">Pendaftar</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Cvideo/verifikasi')?>">Verifikasi</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Cvideo/pengumpulankarya')?>">Pengumpulan Karya</a>
+								</li>
+							</ul>
+						</li>
+                        <?php elseif($this->session->userdata('id_role') == 7):?>
+                            <!-- FOTOGRAFI -->
+                            <li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"><i class="fa-solid fa-camera"></i><span>Fotografi</span> </a>
+							<ul class="sub-menu" aria-expanded="true">
+								<li> <a href="<?= base_url('Admin/Fotografi')?>">Pendaftar</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Fotografi/verifikasi')?>">Verifikasi</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Fotografi/pengumpulankarya')?>">Pengumpulan Karya</a>
+								</li>
+							</ul>
+						</li>
+                        <?php else : ?>
+                            <!-- POSTER -->
+                            <li>
+							<a href="javascript: void(0);" class="has-arrow waves-effect"><i class="fa-solid fa-crop"></i><span>Desain Poster</span> </a>
+							<ul class="sub-menu" aria-expanded="true">
+								<li> <a href="<?= base_url('Admin/Poster')?>">Pendaftar</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Poster/verifikasi')?>">Verifikasi</a>
+								</li>
+								<li> <a href="<?= base_url('Admin/Poster/pengumpulankarya')?>">Pengumpulan Karya</a>
+								</li>
+							</ul>
+						</li>
+                        <?php endif ?>  
                     </ul>
                 </div>
             </div>

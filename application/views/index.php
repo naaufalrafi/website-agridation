@@ -89,7 +89,7 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="card cardInfo d-block" style="width: 305px; height: 300px; margin-left: 52px;">
-                    <img src="<?= base_url('assets/icon/')?>camera.svg" class="card-img-top"
+                    <img src="<?= base_url('assets/Illustration/')?>fotografi.svg" class="card-img-top"
                       style="display: block; margin: auto; width: 128px;" alt="...">
                     <div class="card-body">
                       <h4 class="card-title text-center">Photography Competition</h4>
@@ -110,7 +110,7 @@
 
                 <div class="carousel-item">
                   <div class="card cardInfo d-block" style="width: 305px; height: 300px; margin-left: 52px;">
-                    <img src="<?= base_url('assets/img/lomba/')?>podcast.svg" class="card-img-top"
+                    <img src="<?= base_url('assets/Illustration/')?>podcast.svg" class="card-img-top"
                       style="display: block; margin: auto; width: 128px;" alt="...">
                     <div class="card-body">
                       <h4 class="card-title text-center">PodCast</h4>
@@ -131,7 +131,7 @@
 
                 <div class="carousel-item">
                   <div class="card cardInfo d-block" style="width: 305px; height: 300px; margin-left: 52px;">
-                    <img src="<?= base_url('assets/img/lomba/')?>bp.svg" class="card-img-top"
+                    <img src="<?= base_url('assets/Illustration/')?>BP.svg" class="card-img-top"
                       style="display: block; margin: auto; width: 128px;" alt="...">
                     <div class="card-body">
                       <h4 class="card-title text-center">Business Plan</h4>
@@ -151,7 +151,7 @@
 
                 <div class="carousel-item">
                   <div class="card cardInfo d-block" style="width: 305px; height: 300px; margin-left: 52px;">
-                    <img src="<?= base_url('assets/img/lomba/')?>cv.svg" class="card-img-top"
+                    <img src="<?= base_url('assets/Illustration/')?>cv.svg" class="card-img-top"
                       style="display: block; margin: auto; width: 128px;" alt="...">
                     <div class="card-body">
                       <h4 class="card-title text-center">Creative Video</h4>
@@ -172,7 +172,7 @@
 
                 <div class="carousel-item">
                   <div class="card cardInfo d-block" style="width: 305px; height: 300px; margin-left: 52px;">
-                    <img src="<?= base_url('assets/img/lomba/')?>poster.svg" class="card-img-top"
+                    <img src="<?= base_url('assets/Illustration/')?>Poster.svg" class="card-img-top"
                       style="display: block; margin: auto; width: 128px;" alt="...">
                     <div class="card-body">
                       <h4 class="card-title text-center">Desain Poster</h4>
@@ -193,7 +193,7 @@
 
                 <div class="carousel-item">
                   <div class="card cardInfo d-block" style="width: 305px; height: 300px; margin-left: 52px;">
-                    <img src="<?= base_url('assets/img/lomba/')?>lkti.svg" class="card-img-top"
+                    <img src="<?= base_url('assets/Illustration/')?>ltki.svg" class="card-img-top"
                       style="display: block; margin: auto; width: 128px;" alt="...">
                     <div class="card-body">
                       <h4 class="card-title text-center">LKTI</h4>

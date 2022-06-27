@@ -19,7 +19,7 @@ class Lkti extends CI_Controller
         date_default_timezone_set("Asia/Jakarta");
         $waktu_sekarang = strtotime(date('Y-m-d'));
         //tanggal 2022-08-14
-        $waktu_acara = strtotime('2022-06-14');
+        $waktu_acara = strtotime('2022-08-14');
         //tanggal 2022-09-03
         $waktu_finalis = strtotime('2022-09-03');
         //tanggal 2022-09-11

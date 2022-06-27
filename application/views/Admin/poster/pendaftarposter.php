@@ -9,6 +9,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Button trigger modal -->
             <!-- end page title -->
             <div class="row">
                             <div class="col-12">
@@ -16,13 +17,14 @@
                                     <div class="card-body">
                                         <h4 class="card-title">Pendaftar Desain Poster</h4>
                                         <p class="card-title-desc">Berisikan semua data pendaftar desain poster dari segala jenis status
-                                            <br><small class="text-muted">*klik gambar untuk memperbesar</small></p>
+                                            <br><small class="text-muted">*klik gambar untuk memperbesar</small>
+                                            <br><small class="text-muted">*klik nama peserta untuk melihat detail identitas peserta</small></p>
                                         
                                         <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                             <thead>
                                             <tr>
                                                 <th>Nama Pendaftar</th>
-                                                <th>Hasil Karya</th>
+                                                <th>Bukti Hasil Karya</th>
                                                 <th>Identitas</th>
                                                 <th>Follow</th>
                                                 <th>Twibbon</th>
@@ -32,9 +34,55 @@
                                             </thead>
                                             <tbody>
                                             <?php foreach ($poster as $p):?>
+                                            <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal<?=$p->id_glomba?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Identitas Peserta</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-xl-3">
+                                                        Nama Peserta 
+                                                    </div>
+                                                    <div class="col-xl-9">
+                                                        : <?= $p->name ?>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xl-3">
+                                                        No Telepon 
+                                                    </div>
+                                                    <div class="col-xl-9">
+                                                        : <?= $p->phone ?>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xl-3">
+                                                        Email 
+                                                    </div>
+                                                    <div class="col-xl-9">
+                                                        : <?= $p->email ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
                                             <tr>
-                                                <td><?= $p->nama_ketua ?></td>
-                                                <td><?= $p->pengumpulan_karya ?></td>
+                                                <td><a href="#" class="text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal<?=$p->id_glomba?>"><?= $p->nama_ketua ?></a></td>
+                                                <td>
+                                                    <?php if($p->pengumpulan_karya == NULL): ?>
+                                                        Belum mengumpulkan
+                                                    <?php else:?>
+                                                        <a href="<?= base_url('assets/media/upload/')?><?= $p->pengumpulan_karya ?>" target="_blank" rel="noopener noreferrer"><img src="<?= base_url('assets/media/upload/')?><?= $p->pengumpulan_karya ?>" alt="Bukti Pembayaran <?= $p->nama_ketua ?>" width="100"></a>
+                                                    <?php endif ?>
+                                                </td>
                                                 <td><a href="<?= base_url('assets/media/upload/')?><?= $p->bukti_identitas ?>" target="_blank" rel="noopener noreferrer"><img src="<?= base_url('assets/media/upload/')?><?= $p->bukti_identitas ?>" alt="Bukti Identitas <?= $p->nama_ketua ?>" width="100"></a></td>
                                                 <td><a href="<?= base_url('assets/media/upload/')?><?= $p->bukti_follow ?>" target="_blank" rel="noopener noreferrer"><img src="<?= base_url('assets/media/upload/')?><?= $p->bukti_follow ?>" alt="Bukti Follow <?= $p->nama_ketua ?>" width="100"></a></td>
                                                 <td><a href="<?= base_url('assets/media/upload/')?><?= $p->bukti_posting ?>" target="_blank" rel="noopener noreferrer"><img src="<?= base_url('assets/media/upload/')?><?= $p->bukti_posting ?>" alt="Bukti Twibbon <?= $p->nama_ketua ?>" width="100"></a></td>
