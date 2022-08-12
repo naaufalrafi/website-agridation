@@ -1,0 +1,19 @@
+body {
+  background: url(/assets/img/auth/bg.png) no-repeat center center fixed;
+  background-size: cover;
+  /* min-height: 100vh;
+      min-width: 100vw; */
+  font-family: 'Lato';
+}
+
+.sukses {
+  height: 500px;
+  background-color: #125d1b;
+  border-radius: 30px;
+  color: white;
+}
+
+.text-sukses a {
+  color: white;
+  text-decoration: none;
+}

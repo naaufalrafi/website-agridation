@@ -1,0 +1,211 @@
+/* Default Home Styling */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.btn {
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: 10px;
+  margin-left: 25px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/* Navbar styling */
+nav {
+  border-bottom: 2px solid grey;
+}
+
+nav .nav-item a {
+  color: #09421a;
+}
+
+.nav-item a:hover {
+  color: #09421a;
+}
+
+.btn-masuk {
+  background-color: #09421a;
+  color: white;
+}
+
+.btn-masuk:hover {
+  background-color: #09421a;
+  color: white;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  right: 100%;
+  margin-top: -1px;
+}
+/* Hero Styling */
+#hero {
+  color: white;
+}
+
+.button-hero {
+  /* height: 60px; */
+  background-color: #f0e4ab;
+  border-radius: 10px;
+}
+
+.btnHero {
+  background-color: #032c17;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-bottom: 12px;
+  border: 1px solid #032c17;
+}
+
+.btnHero:hover {
+  background-color: #f0e4ab;
+  color: #032c17;
+  border-radius: 8px;
+  font-size: 18px;
+  border: 1px solid #032c17;
+}
+
+@media screen and (max-width: 768px) {
+  .main-col {
+    width: 100%;
+  }
+}
+
+/* info sectio styling */
+#info {
+  height: 450px;
+}
+
+.containerInfo {
+  background-color: #fffcd9;
+  height: 400px;
+  border-radius: 20px;
+}
+
+/* perlombaan section styling */
+#perlombaan {
+  height: 400px;
+  background-color: #fffcd9;
+}
+
+.btnLomba {
+  background-color: #f8f9fa;
+  margin: 0;
+  border: 1px solid #715c20;
+  border-radius: 8px;
+  padding-bottom: 7px;
+  color: #715c20;
+  transition: 0.5s;
+}
+
+.btnLomba:hover {
+  background-color: #715c20;
+  margin: 0;
+  border: 1px solid #715c20;
+  border-radius: 8px;
+  padding-bottom: 7px;
+  color: #f8f9fa;
+}
+
+.cardInfo {
+  border-radius: 12px;
+  background-color: #f0e4ab;
+  border: none;
+}
+
+.card-body ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #495057;
+}
+
+.card-body ul li a {
+  text-decoration: none;
+  color: #495057;
+}
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: url(./assets/icon/arrowNext.svg);
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: url(./assets/icon/arrowPrev.svg);
+  font-size: 55px;
+  color: red;
+} */
+
+/* Lainnya Section Styling */
+#lainnya {
+  height: 400px;
+}
+
+/* Artikel Section Styling */
+#artikel {
+  height: 550px;
+}
+
+.cardArtikel {
+  background-color: #125d1b;
+  border-radius: 15px;
+}
+
+.card-body > h6 {
+  color: #ced4da;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.card-body > h4 {
+  color: white;
+}
+
+.card-body > a {
+  color: #ced4da;
+  font-size: 14px;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/* Partner Section Styling */
+#partner {
+  /*   */
+  background-color: #125d1b;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.section-footer {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
